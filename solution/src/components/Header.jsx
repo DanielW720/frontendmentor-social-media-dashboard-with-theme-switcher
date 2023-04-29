@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header({ updateTheme }) {
+export default function Header({ updateTheme, totalFollowers }) {
   return (
     <header className="bg-[color:var(--whiteBG)] dark:bg-[color:var(--veryDarkBlueTopBGPattern)] h-60 ">
       <div className="pt-8 pr-8 pl-6 md:flex justify-between">
@@ -9,7 +9,7 @@ export default function Header({ updateTheme }) {
             Social Media Dashboard
           </h1>
           <p className="text-[color:var(--darkGrayishBlueText)] dark:text-[color:var(--desaturatedBlueText)] font-semibold">
-            Total Followers: 23,004
+            Total Followers: {(+totalFollowers).toLocaleString("en-US")}
           </p>
         </div>
         <hr className="border-1 border-[color:var(--darkGrayishBlueText)] dark:border-[color:var(--desaturatedBlueText)]  mt-6 mb-6  md:hidden" />
