@@ -1,0 +1,11 @@
+- Header
+- Top cards
+- Bottom cards
+- React Context för att switcha tema
+- Layout (översiktlig)
+- Layout (övre)
+- Layout (nedre)
+- Landscape
+- Toggle
+- Data
+- Active states
