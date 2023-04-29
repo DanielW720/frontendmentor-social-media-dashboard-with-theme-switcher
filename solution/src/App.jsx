@@ -29,8 +29,8 @@ export default function App() {
           )}
         />
         <main>
-          <MediaPageFollowers />
-          <OverviewToday />
+          <MediaPageFollowers data={data} />
+          <OverviewToday data={data} />
         </main>
       </div>
     </div>
@@ -45,10 +45,21 @@ const data = {
       icon: iconFacebook,
       followers: {
         total: 1987,
-      },
-      today: {
-        followers: 87,
-        difference: 3,
+        today: {
+          followers: {
+            absoluteDifference: 12,
+          },
+          percentageDifference: 3,
+          likes: {
+            absoluteDifference: 52,
+            percentageDifference: -2,
+          },
+          platformSpecific: {
+            platformMetric: "Page Views",
+            absoluteDifference: 87,
+            percentageDifference: 3,
+          },
+        },
       },
     },
     {
@@ -56,10 +67,21 @@ const data = {
       icon: iconTwitter,
       followers: {
         total: 1044,
-      },
-      today: {
-        followers: 87,
-        difference: 3,
+        today: {
+          followers: {
+            absoluteDifference: 99,
+          },
+          percentageDifference: -2,
+          likes: {
+            absoluteDifference: 507,
+            percentageDifference: 553,
+          },
+          platformSpecific: {
+            platformMetric: "Retweets",
+            absoluteDifference: 117,
+            percentageDifference: 303,
+          },
+        },
       },
     },
     {
@@ -67,10 +89,21 @@ const data = {
       icon: iconInstagram,
       followers: {
         total: 11734,
-      },
-      today: {
-        followers: 87,
-        difference: 3,
+        today: {
+          followers: {
+            absoluteDifference: 1099,
+          },
+          percentageDifference: 3,
+          likes: {
+            absoluteDifference: 5462,
+            percentageDifference: 2257,
+          },
+          platformSpecific: {
+            platformMetric: "Profile Views",
+            absoluteDifference: "52k",
+            percentageDifference: 1375,
+          },
+        },
       },
     },
     {
@@ -78,10 +111,21 @@ const data = {
       icon: iconYoutube,
       followers: {
         total: 8239,
-      },
-      today: {
-        followers: 87,
-        difference: 3,
+        today: {
+          followers: {
+            absoluteDifference: -144,
+          },
+          percentageDifference: 3,
+          likes: {
+            absoluteDifference: 107,
+            percentageDifference: -19,
+          },
+          platformSpecific: {
+            platformMetric: "Total Views",
+            absoluteDifference: 1407,
+            percentageDifference: -12,
+          },
+        },
       },
     },
   ],
