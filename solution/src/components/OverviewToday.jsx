@@ -3,12 +3,12 @@ import OverviewTodayPlatformCards from "./OverviewTodayPlatformCards";
 
 export default function OverviewToday({ data }) {
   return (
-    <div className="p-8 pt-0 relative md:top-[-4rem]">
+    <div className="p-8 pt-0 relative md:top-[-4rem] md:pl-24 md:pr-24">
       <h2 className="text-[color:var(--veryDarkBlueText)] dark:text-[color:var(--whiteText)] font-bold text-2xl mb-4">
         Overview - Today
       </h2>
       {
-        <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 lg:grid-cols-4">
           <OverviewTodayPlatformCards
             platform={data.platforms[0]}
             useLikes={false}

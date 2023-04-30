@@ -3,19 +3,29 @@ import Card from "./Card";
 import iconUp from "../assets/images/icon-up.svg";
 import iconDown from "../assets/images/icon-down.svg";
 
-export default function MediaFollowersCard({ platform, userName }) {
-  const isPositive =
-    +platform.followers.today.followers.absoluteDifference >= 0;
+export default function MediaFollowersCard({ platform }) {
+  const isPositive = platform.followers.today.followers.absoluteDifference >= 0;
+
+  const platformColorGradients = {
+    facebook: "bg-gradient-to-r from-[#198ff5] to-[#198ff5]",
+    twitter: "bg-gradient-to-r from-[#1ca0f2] to-[#1ca0f2]",
+    instagram: "bg-gradient-to-r from-[#fdc468] to-[#df4996]",
+    youtube: "bg-gradient-to-r from-[#c4032a] to-[#c4032a]",
+  };
 
   return (
     <Card className="">
-      <div className="w-full bg-[color:var(--facebook)] h-1 rounded-t-md mb-6"></div>
+      <div
+        className={`${
+          platformColorGradients[platform.platform]
+        } h-1 rounded-t-md mb-6 w-full`}
+      ></div>
       <div className="flex justify-center items-center w-full">
         <div className="mr-2">
           <img src={platform.icon} alt="Facebook icon" />
         </div>
         <p className="text-[color:var(--darkGrayishBlueText)] dark:text-[color:var(--desaturatedBlueText)] font-semibold">
-          @{userName}
+          @{platform.userName}
         </p>
       </div>
       <h2 className="text-6xl text-[color:var(--veryDarkBlueText)] dark:text-[color:var(--whiteText)] font-bold mt-4 ">

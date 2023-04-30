@@ -38,10 +38,10 @@ export default function App() {
 }
 
 const data = {
-  userName: "nathanf",
   platforms: [
     {
       platform: "facebook",
+      userName: "nathanf",
       icon: iconFacebook,
       followers: {
         total: 1987,
@@ -64,6 +64,7 @@ const data = {
     },
     {
       platform: "twitter",
+      userName: "nathanf",
       icon: iconTwitter,
       followers: {
         total: 1044,
@@ -86,6 +87,7 @@ const data = {
     },
     {
       platform: "instagram",
+      userName: "realnathanf",
       icon: iconInstagram,
       followers: {
         total: 11734,
@@ -108,6 +110,7 @@ const data = {
     },
     {
       platform: "youtube",
+      userName: "Nathan F.",
       icon: iconYoutube,
       followers: {
         total: 8239,
