@@ -8,26 +8,36 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 Users should be able to:
 
+- Toggle color theme to their preference
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Toggle color theme to their preference
+
+### Design:
+
+<img src="design/desktop-design-dark.jpg" width=80% >
 
 ### Screenshot
 
+<img src="screenshot.png" width=80% >
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](./solution/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- [React](https://reactjs.org/) - JS library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vite](https://vitejs.dev/) - JavaScript build tool for optimized application
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
+## Author
+
+- LinkedIn - [Daniel Westerlund](https://www.linkedin.com/in/daniel-westerlund-a07529179/)
+- Website - [GitHub Pages](https://danielw720.github.io/)
+- Frontend Mentor - [@DanielW720](https://www.frontendmentor.io/profile/yourusername)
